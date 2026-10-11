@@ -19,13 +19,12 @@ public:
     for (int i{0}; i < m_word.length(); ++i) {
       wordInUs += "_";
     }
-    std::cout << "The word is: " << m_word << '\n';
     std::cout << "The word: " << wordInUs << '\n';
     m_currentState = wordInUs;
   }
   std::string_view getCurrentState() { return m_currentState; }
   bool getIsPlaying() { return m_isPlaying; }
-  bool getReachedMaxG() { return m_wrongGuesses > MAXGUESS; }
+  bool getReachedMaxG() { return m_wrongGuesses >= MAXGUESS; }
   bool handleWinLoss();
   void updateCurrentState();
   std::vector<int> findIdxOfGuess(char);
@@ -162,7 +161,6 @@ std::vector<int> Session::findIdxOfGuess(char c) {
   std::vector<int> idxs{};
   for (int i{0}; i < m_word.length(); ++i) {
     if (c == m_word[i]) {
-      std::cout << c << " was found";
       idxs.push_back(i);
     }
   }

@@ -9,5 +9,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Define your executable and list ALL your .cpp source files here
-add_executable(my_app main.cpp
+add_executable(my_app main.cpp random.h
 )
