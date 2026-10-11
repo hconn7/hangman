@@ -1,3 +1,0 @@
-/home/henry_conner/workspace/cpp/build/CMakeFiles/my_app.dir
-/home/henry_conner/workspace/cpp/build/CMakeFiles/edit_cache.dir
-/home/henry_conner/workspace/cpp/build/CMakeFiles/rebuild_cache.dir
