@@ -4,5 +4,5 @@ CMakeLists.txt
 compile_commands.json@	 --> /home/henry_conner/workspace/cpp/build/compile_commands.json
 
 out*
-build/
+/build
 main*
